@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  subdomainapi:
+    image: subdomainapi
+    build:
+      context: .
+      dockerfile: subdomainapi/Dockerfile
