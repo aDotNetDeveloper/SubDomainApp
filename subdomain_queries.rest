@@ -1,0 +1,10 @@
+@url = http://localhost:50948
+
+### Get sub domains
+GET {{url}}/subdomain/enumerate/yahoo.com  HTTP/1.1
+
+### Get IP Addresses
+POST {{url}}/subdomain/findipaddresses HTTP/1.1
+content-type: application/json
+
+[ "a.yahoo.com", "b.yahoo.com" ]

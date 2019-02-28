@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "subdomainapi", "subdomainapi\subdomainapi.csproj", "{96CD5B8C-8F04-4005-9B49-A624BE19145F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "subdomainapi", "subdomainapi\subdomainapi.csproj", "{96CD5B8C-8F04-4005-9B49-A624BE19145F}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9A537D07-50AD-4228-905F-F1884EC11F67}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF9DD942-9A18-4B38-9A50-E473CD0CE85E}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		subdomain_queries.rest = subdomain_queries.rest
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,6 @@ Global
 		{96CD5B8C-8F04-4005-9B49-A624BE19145F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96CD5B8C-8F04-4005-9B49-A624BE19145F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96CD5B8C-8F04-4005-9B49-A624BE19145F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A537D07-50AD-4228-905F-F1884EC11F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A537D07-50AD-4228-905F-F1884EC11F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A537D07-50AD-4228-905F-F1884EC11F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A537D07-50AD-4228-905F-F1884EC11F67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
