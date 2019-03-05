@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Net.Http.Headers;
 using SubDomain.Repositories;
 
 namespace SubDomain
@@ -24,7 +25,7 @@ namespace SubDomain
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins",
-                    builder => builder.AllowAnyOrigin().AllowAnyMethod()); // not a good idea for real api's
+                    builder => builder.AllowAnyOrigin().WithMethods(new string[] { "POST", "GET" }).WithHeaders(HeaderNames.ContentType, "application/json"));
             });
 
             services.AddMvc();
